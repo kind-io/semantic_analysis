@@ -8,5 +8,6 @@ require 'rutie'
 module SemanticAnalysis
   class Error < StandardError; end
 
-  Rutie.new(:semantic_analysis).init 'Init_semantic_analyzer', __dir__
+  lib_path = File.join(__dir__, '../lib/')
+  Rutie.new(:semantic_analysis, { lib_path: lib_path }).init 'Init_semantic_analyzer', __dir__
 end

@@ -5,27 +5,27 @@ require 'bigdecimal/util'
 RSpec.describe SemanticAnalysis do
   let(:positive_polarity) do
     {
-      compound: 0.9008351819101658.to_d,
-      pos: 0.5891054238084057.to_d,
+      compound: 0.9008351819101658,
       neg: 0.0,
-      neu: 0.41089457619159425.to_d
+      neu: 0.41089457619159425,
+      pos: 0.5891054238084057
     }
   end
 
   let(:really_positive_polarity) do
     {
-      compound: 0.9222007182386665.to_d,
-      pos: 0.636098981077147.to_d,
+      compound: 0.9222007182386665,
       neg: 0.0,
-      neu: 0.363901018922853.to_d
+      neu: 0.363901018922853,
+      pos: 0.636098981077147
     }
   end
 
   let(:negative_polarity) do
     {
-      compound: -0.8061195239266371.to_d,
-      neg: 0.5096665732698235.to_d,
-      neu: 0.49033342673017655.to_d,
+      compound: -0.8061195239266371,
+      neg: 0.5096665732698235,
+      neu: 0.49033342673017655,
       pos: 0.0
     }
   end
