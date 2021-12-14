@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Semantic Analysis based on VADER Sentiment'
   spec.description = 'Semantic analysis is an excellent tool for determining polarity of text, this exposes a rust-based semantic analysis tool to Ruby'
 
-  spec.required_ruby_version = '>= 2.6.0'
+  spec.required_ruby_version = '>= 2.7.0'
 
   spec.metadata['source_code_uri'] = 'https://github.com/kind-io/semantic_analysis'
   spec.metadata['changelog_uri'] = 'https://github.com/kind-io/semantic_analysis/CHANGELOG.md'

@@ -1,18 +1,18 @@
 # frozen_string_literal: true
 
-require "bundler/gem_tasks"
-require "rspec/core/rake_task"
-require "ffi"
+require 'bundler/gem_tasks'
+require 'rspec/core/rake_task'
+require 'ffi'
 
 RSpec::Core::RakeTask.new(:spec)
 
-require "rubocop/rake_task"
+require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new
 
 task default: %i[spec rubocop]
 
-lib_name = "semantic_analysis"
+lib_name = 'semantic_analysis'
 
 task :rust_build do
   `cargo build --release`
