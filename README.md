@@ -1,8 +1,6 @@
 # SemanticAnalysis
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/semantic_analysis`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+`SemanticAnalysis` is `Rutie` wrapped Rust implementation of [VADER Sentiment Analysis](https://github.com/kind-io/vader-sentiment-rust)
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+polarity = SemanticAnalyzer.score_polarity('I am so happy for you!!! This is Great! 💖')
+expected = {
+  compound: 0.9222007182386665,
+  neg: 0.0,
+  neu: 0.363901018922853,
+  pos: 0.636098981077147
+}
+
+polarity == expected
+```
 
 ## Development
 
